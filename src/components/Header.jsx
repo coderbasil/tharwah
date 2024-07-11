@@ -1,28 +1,31 @@
 import React from "react";
+import logo from "../assets/pictures/logo.png";
+//TODO: Get the logo image here in the files.
 
 function Header() {
   return (
     <header>
-      <div className="flex-item">
-        <img
-          className="logo"
-          src="https://cdn.salla.sa/NOYPq/iFHDPZdriZ0mKQBVDwQBXoAB0RjxHnstx0DC1NNz.jpg"
-          alt="logo"
-        />
+      <div className="logo">
+        <a href="/">
+          <img src={logo} alt="logo" />
+        </a>
       </div>
 
       <div className="nav-items">
         <li>
-          <a href="#">Contact</a>
+          <a href="/contact">تواصل معنا</a>
         </li>
         <li>
-          <a href="#">About us</a>
+          <a href="/about-us">عن ثروة</a>
         </li>
         <li>
-          <a href="#">About us</a>
+          <a href="https://tharwah2023.com/">متجرنا</a>
         </li>
         <li>
-          <a href="#">About us</a>
+          <a href="/cost-calc">حاسبة التكاليف</a>
+        </li>
+        <li>
+          <a href="/excel-sheet">جدول المتابعه</a>
         </li>
       </div>
     </header>
