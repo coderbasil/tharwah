@@ -1,0 +1,177 @@
+.d {
+    background-color: aqua;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "Cairo", sans-serif;
+    font-weight: 600;
+    height: auto;
+    overflow-x: hidden;
+}
+
+.homePage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    width: auto;
+    height: auto;
+}
+
+
+.background-i {
+    height: 70vh;
+    width: 100%;
+    background-image: url(images/wideshot.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.headers {
+    margin-top: -50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation-name: move;
+    animation-duration: 1.5s;
+    animation-iteration-count: 1;
+}
+
+.background-i h1 {
+    padding: 0;
+    margin: 0;
+    font-size: 5rem;
+    color: white;
+    text-shadow: 0px 0px 10px #111;
+    animation-name: appear;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+}
+
+.background-i h2 {
+    padding: 0;
+    margin: 0;
+    font-size: 4rem;
+    color: white;
+    text-shadow: 0px 0px 10px #111;
+    animation-name: appear;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+}
+
+@keyframes appear {
+    from {
+        color: transparent;
+        text-shadow: 0px 0px 10px transparent;
+    }
+    to {
+        color: white;
+        text-shadow: 0px 0px 10px #111;
+
+    }
+}
+
+@keyframes move {
+    from {
+        margin-top: 100px;
+    }
+    to {
+        margin-top: -50px;
+    }
+}
+
+
+
+.second {
+    margin: 2%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr;
+    column-gap: 2%;
+}
+
+.twitterPosts {
+    padding-top: 100px;
+    grid-column: 1 2;
+    height: fit-content;
+    place-self: center;
+    justify-self: center;
+    align-self: start;
+}
+
+.pet-posts {
+    grid-column: 2 3;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    place-self: end;
+    align-self: start;
+}
+
+.pet-posts h1 {
+    margin-left: auto;
+    padding: 2%;
+    margin-right: 3%;
+}
+
+.blogCards {
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: end;
+}
+
+@media (max-width:1024px) {
+    .second {
+        margin: 2%;
+        padding: 3%;
+        width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+        
+    .twitterPosts {
+        padding-top: 100px;
+        height: fit-content;
+        place-self: center;
+        justify-self: center;
+    }
+
+    .pet-posts {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        place-self: end;
+        align-self: start;
+    }
+
+    .pet-posts h1 {
+        margin-left: auto;
+        padding: 2%;
+        margin-right: 3%;
+    }
+
+    .blogCards {
+        margin-left: 5%;
+        flex-wrap: wrap;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+}

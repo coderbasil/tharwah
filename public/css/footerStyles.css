@@ -1,0 +1,45 @@
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color:white;
+    box-shadow: 0 4px 2px 6px lightgray;
+    color: black;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .socialIcons{
+    width: 100%;
+    display: flex;
+    justify-content:start;
+    margin-left: 20px;
+  }
+
+  .socialIcons a{
+    text-decoration: none;
+    padding: 10px 10px 5px 10px;
+    margin: 10px;
+    border-radius: 50%;
+}
+.socialIcons a i{
+    font-size: 2em;
+    color: black;
+    opacity: 0,9;
+}
+/* Hover affect on social media icon */
+.socialIcons a:hover i{
+    color: #C99929;
+    transition: 0.5s;
+}
+
+.brand-name {
+  margin: 0;
+  padding: 0;
+  min-width: fit-content;
+  padding-right: 2%;
+}

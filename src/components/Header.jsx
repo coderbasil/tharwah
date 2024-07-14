@@ -4,7 +4,7 @@ import logo from "../assets/pictures/logo.png";
 
 function Header() {
   return (
-    <header>
+    <header className="sticky">
       <div className="logo">
         <a href="/">
           <img src={logo} alt="logo" />
@@ -12,9 +12,6 @@ function Header() {
       </div>
 
       <div className="nav-items">
-        <li>
-          <a href="/contact">تواصل معنا</a>
-        </li>
         <li>
           <a href="/about-us">عن ثروة</a>
         </li>
@@ -27,6 +24,21 @@ function Header() {
         <li>
           <a href="/excel-sheet">جدول المتابعه</a>
         </li>
+      </div>
+      <div>
+        <div class="navbar">
+          <div class="dropdown">
+            <button class="dropbtn">
+              <i class="fa fa-caret-down arrow"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="/about-us">عن ثروة</a>
+              <a href="https://tharwah2023.com/">متجرنا</a>
+              <a href="/cost-calc">حاسبة التكاليف</a>
+              <a href="/excel-sheet">جدول المتابعه</a>
+            </div>
+          </div>
+        </div>
       </div>
     </header>
   );

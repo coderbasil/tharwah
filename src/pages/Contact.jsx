@@ -20,7 +20,7 @@ export default function Contact() {
             </a>
           </div>
           <div className="social-tiktok">
-            <a href="https://www.tiktok.com/@ayman__alharbi">
+            <a href="">
               <img src={tiktoklogo} alt="tiktok" />
             </a>
           </div>
