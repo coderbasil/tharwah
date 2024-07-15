@@ -14,7 +14,7 @@ function App() {
       <div>
         <BrowserRouter>
           <Routes>
-            <Route index element={<Home/>}/>
+            <Route path="/tharwah/" element={<Home/>}/>
           </Routes>
         </BrowserRouter>
       </div>
