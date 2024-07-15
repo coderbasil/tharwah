@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.js": "/coderbasil/tharwah/static/js/main.a2303f1b.js",
+    "static/media/snapchat.png": "/coderbasil/tharwah/static/media/snapchat.e1848c5c0da978d77eec.png",
+    "static/media/xpng.png": "/coderbasil/tharwah/static/media/xpng.ceebb5188d5820c73e35.png",
+    "static/media/tiktok.png": "/coderbasil/tharwah/static/media/tiktok.38fd47afd0edfc5f8170.png",
+    "static/media/logo.png": "/coderbasil/tharwah/static/media/logo.a00bd2ca7d10144f37ee.png",
+    "index.html": "/coderbasil/tharwah/index.html",
+    "main.a2303f1b.js.map": "/coderbasil/tharwah/static/js/main.a2303f1b.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.a2303f1b.js"
+  ]
+}

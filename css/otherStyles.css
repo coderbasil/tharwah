@@ -1,0 +1,62 @@
+
+.container {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0);
+    background-image: url("../src/assets/pictures/wideshot.jpg");
+}
+
+.contactPage {
+    max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contactPage h1 {
+    max-height: fit-content;
+    margin: 0;
+    font-weight: 650;
+}
+
+
+.Socials {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.social-snap {
+    max-height: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.snaplogo {
+    max-width: 300px;
+}
+
+.social-other {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0px 10%;
+    align-items: center;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.social-tiktok img {
+    max-height: 100px;
+    max-width: 100px;
+    margin-left: 20px;
+}
+
+.social-email img{
+    max-height: 100px;
+    max-width: 100px;
+}
+
+.social-twitter img{
+    max-height: 100px;
+    max-width: 100px;
+}
