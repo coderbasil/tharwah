@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.js": "/tharwah/static/js/main.76ac30f3.js",
+    "main.js": "/tharwah/static/js/main.039fee43.js",
     "static/media/snapchat.png": "/tharwah/static/media/snapchat.e1848c5c0da978d77eec.png",
     "static/media/xpng.png": "/tharwah/static/media/xpng.ceebb5188d5820c73e35.png",
     "static/media/tiktok.png": "/tharwah/static/media/tiktok.38fd47afd0edfc5f8170.png",
     "static/media/logo.png": "/tharwah/static/media/logo.a00bd2ca7d10144f37ee.png",
     "index.html": "/tharwah/index.html",
-    "main.76ac30f3.js.map": "/tharwah/static/js/main.76ac30f3.js.map"
+    "main.039fee43.js.map": "/tharwah/static/js/main.039fee43.js.map"
   },
   "entrypoints": [
-    "static/js/main.76ac30f3.js"
+    "static/js/main.039fee43.js"
   ]
 }
