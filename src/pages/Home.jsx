@@ -3,6 +3,12 @@ import Blogcard from "../components/Blogcard";
 import petBlogs from "../assets/pet-blogs";
 
 export default function Home() {
+  console.log(window.innerWidth);
+  var width = 500;
+  if (window.innerWidth < 1024) {
+    width = 800;
+  }
+  console.log('"'+width.toString()+'"');
   return (
     <div className="homePage">
       <div className="background-i">
@@ -16,7 +22,7 @@ export default function Home() {
           <a
             class="twitter-timeline"
             data-lang="ar"
-            data-width="500"
+            data-width={width.toString()}
             data-height="1000"
             href="https://twitter.com/imoon2002?ref_src=twsrc%5Etfw"
           ></a>
@@ -24,7 +30,7 @@ export default function Home() {
         <div className="pet-posts">
           <h1 align="right">اخر المنشورات البيطرية</h1>
           <div className="blogCards">
-            {petBlogs.slice(petBlogs.length-4, petBlogs.length).map((a) => {
+            {petBlogs.slice(petBlogs.length - 4, petBlogs.length).map((a) => {
               return <Blogcard title={a.title} answer={a.answer} />;
             })}
           </div>

@@ -2,12 +2,13 @@
     background-color: aqua;
 }
 
+
 body{
     margin: 0;
     padding: 0;
     font-family: "Cairo", sans-serif;
     font-weight: 600;
-    height: auto;
+    min-height: calc(fit-content() + 100vh);
     overflow-x: hidden;
 }
 
@@ -17,6 +18,7 @@ body{
     align-items: center;    
     width: auto;
     height: auto;
+    padding-bottom: 5vh;
 }
 
 
@@ -26,7 +28,7 @@ body{
     background-image: url(images/wideshot.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: bottom;
+    background-position: center;
     background-attachment: fixed;
     display: flex;
     flex-direction: column;
@@ -101,13 +103,17 @@ body{
 }
 
 .twitterPosts {
-    padding-top: 100px;
+    box-shadow: 1px 1px 2rem rgba(0, 0, 0, 0.281);
+    margin-top: 13vh;
     grid-column: 1 2;
     height: fit-content;
     place-self: center;
     justify-self: center;
     align-self: start;
+    border-radius: 20px;
 }
+
+
 
 .pet-posts {
     grid-column: 2 3;
@@ -135,6 +141,10 @@ body{
 }
 
 @media (max-width:1024px) {
+    .background-i {
+        background-attachment: local;
+    }
+
     .second {
         margin: 2%;
         padding: 3%;
@@ -144,7 +154,7 @@ body{
     }
         
     .twitterPosts {
-        padding-top: 100px;
+        margin-top: 3vh;
         height: fit-content;
         place-self: center;
         justify-self: center;
