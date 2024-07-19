@@ -19,6 +19,9 @@ function Header() {
           <a href="https://tharwah2023.com/">متجرنا</a>
         </li>
         <li>
+          <a href="/ped-blogs">المنشورات البيطرية</a>
+        </li>
+        <li>
           <a href="/cost-calc">حاسبة التكاليف</a>
         </li>
         <li>
@@ -36,6 +39,7 @@ function Header() {
               <a href="https://tharwah2023.com/">متجرنا</a>
               <a href="/cost-calc">حاسبة التكاليف</a>
               <a href="/excel-sheet">جدول المتابعه</a>
+              <a href="/ped-blogs">المنشورات البيطرية</a>
             </div>
           </div>
         </div>

@@ -1,6 +1,6 @@
 import React from "react";
 import Blogcard from "../components/Blogcard";
-import petBlogs from "../assets/pet-blogs";
+import petBlogs from "../assets/ped-blogs";
 
 export default function Home() {
   console.log(window.innerWidth);

@@ -8,11 +8,12 @@ export default function Blogcard(props) {
   }
   return (
     <div className="blog-card">
+      <img className="blog-img" src={props.img} />
       <div className="container-blog">
         <h1 align="right">{props.title}</h1>
         <p align="right">{ans.toString()}</p>
         <div className="cardFooter">
-          <a href={props.url}>
+          <a href={"ped-blogs/" + props.title}>
             <button className="cardFooterButton">
               <span>اقرأ المزيد</span>
             </button>

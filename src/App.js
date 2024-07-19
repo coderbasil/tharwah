@@ -4,6 +4,9 @@ import Header from "./components/Header";
 import Home from "./pages/Home";
 import Contact from "./pages/Contact";
 import Footer from "./components/Footer";
+import Pedblogs from "./pages/Pedblogs";
+import Blogcard from "./components/Blogcard";
+import Pedblog from "./pages/Pedblog";
 
 
 
@@ -15,6 +18,14 @@ function App() {
         <BrowserRouter>
           <Routes>
             <Route path="/" element={<Home/>}/>
+            <Route path="/ped-blogs" element={<Pedblogs/>}/>
+            <Route path="/ped-blogs/:blogtitle" 
+            loader={({params})=>{
+              console.log(params.blogtitle)
+            }} 
+            action={({params})=>{}}
+            element ={<Pedblog/>}/>
+    
           </Routes>
         </BrowserRouter>
       </div>
