@@ -10,6 +10,7 @@ header {
     padding: 10px 3% 3px 3%;
     box-shadow: 0 4px 2px -2px lightgray;
     position: sticky; top: 0;
+    height: 10vh;
 }
 
 .navbar {
@@ -22,7 +23,7 @@ header li, a{
     text-decoration: none;
 }
 .logo img { 
-    width: 13vh;
+    width: 10vh;
     cursor: pointer;
 }
 

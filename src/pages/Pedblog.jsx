@@ -4,14 +4,23 @@ import pedBlogs from "../assets/ped-blogs";
 
 export default function Pedblog() {
   let params = useParams();
-  const props = pedBlogs.find((blog) => blog.title == params.blogtitle);
-  console.log(props);
+  const props = pedBlogs.find((blog) => blog.title === params.blogtitle);
   return (
-    <div className="blog-card">
-      <img className="blog-img" src={props.url_pic} />
-      <div className="container-blog">
-        <h1 align="right">{props.title}</h1>
-        <p align="right">{props.answer.toString()}</p>
+    <div>
+      <div className="pedblog-body">
+        <div className="pedblog-txt">
+          <h1 align="right" className="pedblog-header">
+            {props.title}
+          </h1>
+          <p align="right" className="pedblog-ans">
+            {props.answer}
+          </p>
+        </div>
+        <div className="pedblog-img">
+          <a href={props.url_pic}>
+            <img src={props.url_pic} alt="" />
+          </a>
+        </div>
       </div>
     </div>
   );
