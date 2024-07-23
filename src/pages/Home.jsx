@@ -12,13 +12,21 @@ export default function Home() {
   return (
     <div className="homePage">
       <div className="background-i">
+        <div></div>
         <div className="headers">
           <h1>حياك في موقع ثروة</h1>
           <h2>للتربية النموذجية</h2>
         </div>
+        <a href="#second">
+          <div className="home-chev">
+            <i class="fa-solid fa-chevron-up"></i>
+          </div>
+        </a>
       </div>
-      <h1 align="right" className="s-header">اخر المنشورات البيطرية</h1>
-      <div className="second">
+      <h1 id="second" align="right" className="s-header">
+        اخر المنشورات البيطرية
+      </h1>
+      <div  className="second">
         <div className="twitterPosts">
           <a
             class="twitter-timeline"

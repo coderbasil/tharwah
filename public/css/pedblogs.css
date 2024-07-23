@@ -5,11 +5,12 @@
 }
 
 .ped-header {
+    overflow-y: hidden;
     width: 100%;
-    height: 80vh;
+    height: 90vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     color: white;
     padding: 0;
@@ -17,21 +18,30 @@
     font-size: 5rem;
     color: white;
     text-shadow: 0px 0px 10px #111;
-    animation-name: appear;
-    animation-duration: 1s;
-    animation-iteration-count: 1;
     font-size: 36px;
     background-image: url(https://stmaaprodfwsite.blob.core.windows.net/assets/sites/1/2016/07/290716-sheep-being-injected-with-antibiotics-c-tim-scrivener.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    background-attachment: fixed;
 }
 
-.ped-header div {
-    animation: move;
-    animation-duration: 1s;
+.ped-header1 {
+    animation: move , appear;
+    animation-duration: 2s;
     animation-iteration-count: 1;
-    margin-top: -50px;
+}
+
+.ped-chev{
+    color: white;
+    font-size: 3.5rem;
+    bottom: 0;
+    transform: translateY(10vh);
+    transition: all 1s ease 0.3s;
+}
+
+.ped-header:hover .ped-chev {
+    transform: translateY(0);
 }
 
 .blog-body {

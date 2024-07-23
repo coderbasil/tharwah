@@ -6,11 +6,17 @@ export default function Pedblogs() {
   return (
     <div className="pedblogsBody">
       <div className="ped-header">
-        <div>
+        <div></div>
+        <div className="ped-header1">
           <h1>المنشورات البيطرية</h1>
         </div>
+        <a href="#blog-body" className="no-phone">
+          <div className="ped-chev">
+            <i class="fa-solid fa-chevron-up"></i>
+          </div>
+        </a>
       </div>
-      <div className="blog-body">
+      <div id="blog-body" className="blog-body">
         <div className="ped-blogs1">
           {pedBlogs.slice(0, pedBlogs.length / 2).map((a) => {
             return (
