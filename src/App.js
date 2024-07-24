@@ -16,7 +16,7 @@ function App() {
       <div>
         <BrowserRouter>
           <Routes>
-            <Route path="/" element={<Home/>}/>
+            <Route index element={<Home/>}/>
             <Route path="/ped-blogs" element={<Pedblogs/>}/>
             <Route path="/ped-blogs/:blogtitle" 
             loader={({params})=>{console.log(params.blogTitle)}} 
