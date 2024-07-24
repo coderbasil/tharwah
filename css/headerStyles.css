@@ -1,4 +1,5 @@
 header {
+    z-index: 2;
     margin: 0%;
     background-color: white;
     font-family: "Cairo", sans-serif;
@@ -9,7 +10,8 @@ header {
     justify-content: space-between;
     padding: 10px 3% 3px 3%;
     box-shadow: 0 4px 2px -2px lightgray;
-    position: sticky; top: 0;
+    position: static; top: 0;
+    height: 10vh;
 }
 
 .navbar {
@@ -22,7 +24,7 @@ header li, a{
     text-decoration: none;
 }
 .logo img { 
-    width: 13vh;
+    width: 10vh;
     cursor: pointer;
 }
 
@@ -49,13 +51,14 @@ header li, a{
     color: #C99929;
 }
 
+
 @media (max-width: 1024px) {
     header {
         position: relative;
     }
 
     .logo img { 
-        width: 15vh;
+        width: 10vh;
     }
     .nav-items {
         display: none;
@@ -86,7 +89,7 @@ header li, a{
         border: none;
         outline: none;
         color: black;
-        padding: 20px 50px 20px 42px;
+        padding: 0px 50px 0px 42px;
         background-color: inherit;
         font-family: inherit;
         margin: 0; 
@@ -109,17 +112,17 @@ header li, a{
         display: none;
         position: absolute;
         background-color: #f9f9f9;
-        min-width: 30svh;
+        min-width: 30svw;
         min-height: fit-content;
         box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
         z-index: 1;
     }
     
     .dropdown-content a {
-        font-size: 3rem;
+        font-size: 5rem;
         float: none;
         color: black;
-        padding: 12px 16px;
+        padding: 12px 24px;
         text-decoration: none;
         display: flex;
         flex-direction: column;

@@ -1,0 +1,171 @@
+
+.homePage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    width: auto;
+    height: auto;
+    padding-bottom: 5vh;
+}
+
+
+.background-i {
+    height: 90vh;
+    width: 100%;
+    background-image: url(images/wideshot.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    overflow-y: hidden;
+}
+
+
+.headers {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation-name: move;
+    animation-duration: 1.5s;
+    animation-iteration-count: 1;
+}
+
+.background-i h1, h2 {
+    padding: 0;
+    margin: 0;
+    font-size: 5rem;
+    color: white;
+    text-shadow: 0px 0px 10px #111;
+    animation-name: appear;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+}
+
+
+.home-chev{
+    color: white;
+    text-shadow: 0px 0px 10px #111;
+    font-size: 3.5rem;
+    transform: translateY(16vh);
+    transition: all 1s ease 0.3s;
+}
+
+.background-i:hover .home-chev {
+    transform: translateY(6vh);
+}
+
+@keyframes appear {
+    from {
+        color: transparent;
+        text-shadow: 0px 0px 10px transparent;
+    }
+    to {
+        color: white;
+        text-shadow: 0px 0px 10px #111;
+
+    }
+}
+
+@keyframes move {
+    from {
+        margin-top: 200px;
+    }
+    to {
+        margin-top: 0px;
+    }
+}
+
+
+
+.second {
+    margin: 2%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr;
+    column-gap: 1%;
+}
+
+.twitterPosts {
+    box-shadow: 1px 1px 2rem rgba(0, 0, 0, 0.281);
+    grid-column: 1 2;
+    height: fit-content;
+    place-self: center;
+    justify-self: center;
+    align-self: start;
+    border-radius: 20px;
+}
+
+.s-header{
+    font-size: 48px;
+    align-self: end;
+    justify-content: end;
+    margin-right: 5vh;
+    margin-top: 5vh;
+}
+
+.pet-posts {
+    grid-column: 2 3;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    place-self: end;
+    align-self: start;
+}
+
+
+.blogCards {
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: end;
+}
+
+@media (max-width:1024px) {
+    .background-i {
+        background-attachment: local;
+    }
+
+    .second {
+        margin: 2%;
+        padding: 3%;
+        width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+        
+    .twitterPosts {
+        margin-top: 3vh;
+        height: fit-content;
+        place-self: center;
+        justify-self: center;
+    }
+
+    .pet-posts {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        place-self: end;
+        align-self: start;
+    }
+
+    .blogCards {
+        margin-left: 5%;
+        flex-wrap: wrap;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .home-chev {display: none;}
+}

@@ -1,0 +1,130 @@
+.pedblogsBody {
+    display: flex;
+    flex-direction: column;   
+    align-items: center;
+}
+
+.ped-header {
+    overflow-y: hidden;
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    padding: 0;
+    margin: 0;
+    font-size: 5rem;
+    color: white;
+    text-shadow: 0px 0px 10px #111;
+    font-size: 36px;
+    background-image: url(https://stmaaprodfwsite.blob.core.windows.net/assets/sites/1/2016/07/290716-sheep-being-injected-with-antibiotics-c-tim-scrivener.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.ped-header1 {
+    animation: move , appear;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+}
+
+.ped-chev{
+    color: white;
+    font-size: 3.5rem;
+    bottom: 0;
+    transform: translateY(10vh);
+    transition: all 1s ease 0.3s;
+}
+
+.ped-header:hover .ped-chev {
+    transform: translateY(-3vh);
+}
+
+.blog-body {
+    display: grid;
+    grid-template-columns: 1% 1fr 1fr 0%;
+    margin-top: 5vh;
+}
+
+.ped-blogs1 {
+    grid-column-start: 2;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    column-gap: 0.5vw;
+    grid-auto-flow: row;
+    grid-template-rows: repeat(100, auto);
+}
+.ped-blogs2 {
+    grid-column-start: 3;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    column-gap: 1vh;
+    grid-template-rows: repeat(100, auto);
+}
+
+.blogitem {
+    justify-content: center;
+    align-items: center;
+    align-self: stretch;
+}
+
+.blogitem .blog-card {
+    width: auto;
+    height: fit-content;
+}
+
+.blogitem .blog-img{
+    display: block;
+    width: 100%;
+    height: fit-content;
+    border-radius: 12px 12px 0px 0px;
+}
+
+.pedblog-body {
+    display: flex;
+    flex-direction: row;
+    margin: 3vh 5%;
+        
+}
+
+.pedblog-header {
+    padding-right: 3%;
+    font-size: 54px;
+}
+
+.pedblog-ans {
+    font-size:20px;
+}
+
+.pedblog-txt {
+    padding-right: 2%;
+}
+
+
+.pedblog-img img{
+    width: 50vh;
+    border-radius: 16px;
+}
+
+.pedblog-img {
+    margin-top: 3vh;
+}
+
+@media (max-width:1024px) {
+    .pedblog-body {
+        flex-direction: column-reverse;
+    }
+    .pedblog-img img {
+        width: 90vw;
+    }
+
+    .ped-chev {
+        display: none;
+    }
+}
