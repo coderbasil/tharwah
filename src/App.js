@@ -2,10 +2,8 @@ import React from "react";
 import {BrowserRouter, Routes, Route} from "react-router-dom";
 import Header from "./components/Header";
 import Home from "./pages/Home";
-import Contact from "./pages/Contact";
 import Footer from "./components/Footer";
 import Pedblogs from "./pages/Pedblogs";
-import Blogcard from "./components/Blogcard";
 import Pedblog from "./pages/Pedblog";
 import Sheets from "./pages/Sheets";
 
@@ -21,9 +19,7 @@ function App() {
             <Route path="/" element={<Home/>}/>
             <Route path="/ped-blogs" element={<Pedblogs/>}/>
             <Route path="/ped-blogs/:blogtitle" 
-            loader={({params})=>{
-              console.log(params.blogtitle)
-            }} 
+            loader={({params})=>{console.log(params.blogTitle)}} 
             action={({params})=>{}}
             element ={<Pedblog/>}/>
             <Route path="/excel-sheet" element={<Sheets/>}/>
@@ -38,6 +34,3 @@ function App() {
 export default App;
 
 
-//TODO: Page about Products and their jobs
-//TODO: a link that takes to the store website
-//TODO: loss calculator (how much does sheep eat and how many have she gave birth to);
