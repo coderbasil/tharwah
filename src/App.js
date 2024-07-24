@@ -7,6 +7,7 @@ import Footer from "./components/Footer";
 import Pedblogs from "./pages/Pedblogs";
 import Blogcard from "./components/Blogcard";
 import Pedblog from "./pages/Pedblog";
+import Sheets from "./pages/Sheets";
 
 
 
@@ -25,7 +26,7 @@ function App() {
             }} 
             action={({params})=>{}}
             element ={<Pedblog/>}/>
-    
+            <Route path="excel-sheet" element={<Sheets/>}/>
           </Routes>
         </BrowserRouter>
       </div>

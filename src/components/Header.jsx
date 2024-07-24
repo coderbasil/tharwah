@@ -22,10 +22,7 @@ function Header() {
           <a href="/ped-blogs">المنشورات البيطرية</a>
         </li>
         <li>
-          <a href="/cost-calc">حاسبة التكاليف</a>
-        </li>
-        <li>
-          <a href="/excel-sheet">جدول المتابعه</a>
+          <a href="/excel-sheet">جداول المتابعه</a>
         </li>
       </div>
       <div>
@@ -37,8 +34,7 @@ function Header() {
             <div class="dropdown-content">
               <a href="/about-us">عن ثروة</a>
               <a href="https://tharwah2023.com/">متجرنا</a>
-              <a href="/cost-calc">حاسبة التكاليف</a>
-              <a href="/excel-sheet">جدول المتابعه</a>
+              <a href="/excel-sheet">جداول المتابعه</a>
               <a href="/ped-blogs">المنشورات البيطرية</a>
             </div>
           </div>

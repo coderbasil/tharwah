@@ -41,7 +41,7 @@
 }
 
 .ped-header:hover .ped-chev {
-    transform: translateY(0);
+    transform: translateY(-3vh);
 }
 
 .blog-body {
