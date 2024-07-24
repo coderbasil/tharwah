@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.js": "/tharwah/static/js/main.42ad0a12.js",
-    "static/media/snapchat.png": "/tharwah/static/media/snapchat.e1848c5c0da978d77eec.png",
-    "static/media/xpng.png": "/tharwah/static/media/xpng.ceebb5188d5820c73e35.png",
-    "static/media/tiktok.png": "/tharwah/static/media/tiktok.38fd47afd0edfc5f8170.png",
-    "static/media/logo.png": "/tharwah/static/media/logo.a00bd2ca7d10144f37ee.png",
-    "index.html": "/tharwah/index.html",
-    "main.42ad0a12.js.map": "/tharwah/static/js/main.42ad0a12.js.map"
+    "main.js": "/static/js/main.703c1eec.js",
+    "static/media/snapchat.png": "/static/media/snapchat.e1848c5c0da978d77eec.png",
+    "static/media/xpng.png": "/static/media/xpng.ceebb5188d5820c73e35.png",
+    "static/media/tiktok.png": "/static/media/tiktok.38fd47afd0edfc5f8170.png",
+    "static/media/logo.png": "/static/media/logo.a00bd2ca7d10144f37ee.png",
+    "index.html": "/index.html",
+    "main.703c1eec.js.map": "/static/js/main.703c1eec.js.map"
   },
   "entrypoints": [
-    "static/js/main.42ad0a12.js"
+    "static/js/main.703c1eec.js"
   ]
 }
