@@ -135,6 +135,7 @@
     }
     .sheet {
         width: 100%;
+        justify-content: space-evenly;
         flex-direction: column-reverse;
     }
 
@@ -142,11 +143,14 @@
         width: 100%;
     }
     .sheet-pic img{
+        height: auto;
         width: 100%;
     }
 
     .sheet-tl {
+        /* z-index: 2; */
         margin-top: 5%;
+        margin-bottom: ;
         justify-content: center;
         align-items: center;
     }
