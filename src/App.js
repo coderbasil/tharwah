@@ -14,7 +14,7 @@ function App() {
     <div>
       <Header></Header>
       <div>
-        <BrowserRouter>
+        <BrowserRouter basename="https://coderbasil.github.io/tharwah/">
           <Routes>
             <Route index element={<Home/>}/>
             <Route path="/ped-blogs" element={<Pedblogs/>}/>
