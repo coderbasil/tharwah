@@ -11,11 +11,11 @@ import Sheets from "./pages/Sheets";
 
 function App() {
   return (
-    <BrowserRouter basename="/tharwah/">
+    <BrowserRouter >
       <div>
         <Header></Header>
         <div>
-            <Routes>
+            <Routes basename={'/tharwah/'}>
               <Route path="/" element={<Home/>}/>
               <Route path="/ped-blogs" element={<Pedblogs/>}/>
               <Route path="/ped-blogs/:blogtitle" 
