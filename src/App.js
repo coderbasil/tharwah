@@ -11,23 +11,22 @@ import Sheets from "./pages/Sheets";
 
 function App() {
   return (
-    <BrowserRouter basename="https://coderbasil.github.io/tharwah/">
-
-    <div>
-      <Header></Header>
+    <BrowserRouter basename="/tharwah/">
       <div>
-                  <Routes>
-            <Route path="/" element={<Home/>}/>
-            <Route path="/ped-blogs" element={<Pedblogs/>}/>
-            <Route path="/ped-blogs/:blogtitle" 
-            loader={({params})=>{console.log(params.blogTitle)}} 
-            action={({params})=>{}}
-            element ={<Pedblog/>}/>
-            <Route path="/excel-sheet" element={<Sheets/>}/>
-          </Routes>
+        <Header></Header>
+        <div>
+            <Routes>
+              <Route path="/" element={<Home/>}/>
+              <Route path="/ped-blogs" element={<Pedblogs/>}/>
+              <Route path="/ped-blogs/:blogtitle" 
+              loader={({params})=>{console.log(params.blogTitle)}} 
+              action={({params})=>{}}
+              element ={<Pedblog/>}/>
+              <Route path="/excel-sheet" element={<Sheets/>}/>
+            </Routes>
+        </div>
+        <Footer></Footer>
       </div>
-      <Footer></Footer>
-    </div>
     </BrowserRouter>
 
   );
