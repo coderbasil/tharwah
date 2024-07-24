@@ -11,12 +11,13 @@ import Sheets from "./pages/Sheets";
 
 function App() {
   return (
+    <BrowserRouter basename="https://coderbasil.github.io/tharwah/">
+
     <div>
       <Header></Header>
       <div>
-        <BrowserRouter basename="https://coderbasil.github.io/tharwah/">
-          <Routes>
-            <Route index element={<Home/>}/>
+                  <Routes>
+            <Route path="/" element={<Home/>}/>
             <Route path="/ped-blogs" element={<Pedblogs/>}/>
             <Route path="/ped-blogs/:blogtitle" 
             loader={({params})=>{console.log(params.blogTitle)}} 
@@ -24,10 +25,11 @@ function App() {
             element ={<Pedblog/>}/>
             <Route path="/excel-sheet" element={<Sheets/>}/>
           </Routes>
-        </BrowserRouter>
       </div>
       <Footer></Footer>
     </div>
+    </BrowserRouter>
+
   );
 }
 
