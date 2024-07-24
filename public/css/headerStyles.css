@@ -112,17 +112,17 @@ header li, a{
         display: none;
         position: absolute;
         background-color: #f9f9f9;
-        min-width: 30svh;
+        min-width: 30svw;
         min-height: fit-content;
         box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
         z-index: 1;
     }
     
     .dropdown-content a {
-        font-size: 3rem;
+        font-size: 5rem;
         float: none;
         color: black;
-        padding: 12px 16px;
+        padding: 12px 24px;
         text-decoration: none;
         display: flex;
         flex-direction: column;

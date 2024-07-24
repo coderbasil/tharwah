@@ -46,7 +46,7 @@
 
 .blog-body {
     display: grid;
-    grid-template-columns: 3% 1fr 1fr 3%;
+    grid-template-columns: 1% 1fr 1fr 0%;
     margin-top: 5vh;
 }
 
@@ -55,7 +55,7 @@
     width: 100%;
     display: grid;
     grid-template-columns: 1fr;
-    column-gap: 1vh;
+    column-gap: 0.5vw;
     grid-auto-flow: row;
     grid-template-rows: repeat(100, auto);
 }
@@ -114,4 +114,17 @@
 
 .pedblog-img {
     margin-top: 3vh;
+}
+
+@media (max-width:1024px) {
+    .pedblog-body {
+        flex-direction: column-reverse;
+    }
+    .pedblog-img img {
+        width: 90vw;
+    }
+
+    .ped-chev {
+        display: none;
+    }
 }

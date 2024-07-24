@@ -9,12 +9,9 @@ export default function Sheet(props) {
           <img src={props.pic} alt="" />
         </div>
       )}
-        {show && (<div style={{marginLeft:"2vw", fontSize:"3.5rem"}}><h1>{props.title}</h1></div>)}
+        {show && (<div className="sheet-ih"><h1>{props.title}</h1></div>)}
       {!show && (
         <div className="sheet-tl">
-          <div className="sheet-title">
-            <h1>{props.title}</h1>
-          </div>
           <div>
             <a className="sheet-link" href={props.link}>
               للتحميل اضغط هنا
