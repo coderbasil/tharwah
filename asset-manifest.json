@@ -1,11 +1,11 @@
 {
   "files": {
-    "main.js": "/tharwah/static/js/main.ae342ea3.js",
+    "main.js": "/tharwah/static/js/main.3d3bdc0d.js",
     "static/media/logo.png": "/tharwah/static/media/logo.a00bd2ca7d10144f37ee.png",
     "index.html": "/tharwah/index.html",
-    "main.ae342ea3.js.map": "/tharwah/static/js/main.ae342ea3.js.map"
+    "main.3d3bdc0d.js.map": "/tharwah/static/js/main.3d3bdc0d.js.map"
   },
   "entrypoints": [
-    "static/js/main.ae342ea3.js"
+    "static/js/main.3d3bdc0d.js"
   ]
 }
