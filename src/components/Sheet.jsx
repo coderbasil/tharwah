@@ -1,7 +1,7 @@
 import React from "react";
 
 export default function Sheet(props) {
-  const show = props.link == "";
+  const show = props.link === "";
   return (
     <div className="sheet">
       {!show && (

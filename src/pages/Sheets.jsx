@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import Sheet from "../components/Sheet";
 import ExcelSheets from "../assets/ExcelSheets.js";
 
@@ -13,7 +13,6 @@ export default function Sheets() {
   };
 
   let val;
-  let x;
 
   const [value, setSheet] = React.useState(getInitialState);
 

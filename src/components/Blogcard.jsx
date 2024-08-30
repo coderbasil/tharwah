@@ -8,7 +8,7 @@ export default function Blogcard(props) {
   }
   return (
     <div className="blog-card">
-      <img className="blog-img" src={props.img} />
+      <img className="blog-img" src={props.img} alt="blog-img" />
       <div className="container-blog">
         <h1 align="right">{props.title}</h1>
         <p align="right">{ans.toString()}</p>
