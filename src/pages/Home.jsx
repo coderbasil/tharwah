@@ -26,7 +26,7 @@ export default function Home() {
       <h1 id="second" align="right" className="s-header">
         اخر المنشورات البيطرية
       </h1>
-      <div  className="second">
+      <div className="second">
         <div className="twitterPosts">
           <a
             class="twitter-timeline"
@@ -34,7 +34,9 @@ export default function Home() {
             data-width={width.toString()}
             data-height="1000"
             href="https://twitter.com/imoon2002?ref_src=twsrc%5Etfw"
-          ></a>
+          >
+            .
+          </a>
         </div>
         <div className="pet-posts">
           <div className="blogCards">
