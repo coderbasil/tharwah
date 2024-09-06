@@ -12,24 +12,23 @@ import "./css/styles.css"
 
 function App() {
   return (
-    <BrowserRouter basename="/tharwah">
       <div>
         <Header></Header>
         <div>
+          <BrowserRouter basename="/tharwah">
             <Routes>
               <Route index element={<Home/>}/>
-              <Route path="ped-blogs" element={<Pedblogs/>}/>
-              <Route path="ped-blogs/:blogtitle" 
+              <Route path="/ped-blogs" element={<Pedblogs/>}/>
+              <Route path="/ped-blogs/:blogtitle" 
               loader={({params})=>{console.log(params.blogtitle)}} 
               action={({ params }) => {}}
               element ={<Pedblog/>}/>
-              <Route path="excel-sheet" element={<Sheets/>}/>
-              <Route path="*" element={<Home/>}/>
+              <Route path="/excel-sheet" element={<Sheets/>}/>
             </Routes>
+          </BrowserRouter>
         </div>
         <Footer></Footer>
       </div>
-    </BrowserRouter>
 
   );
 }
