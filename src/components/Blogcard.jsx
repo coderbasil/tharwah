@@ -13,7 +13,7 @@ export default function Blogcard(props) {
         <h1 align="right">{props.title}</h1>
         <p align="right">{ans.toString()}</p>
         <div className="cardFooter">
-          <a href={"ped-blogs/" + props.title}>
+          <a href={"/tharwah/ped-blogs/" + props.title}>
             <button className="cardFooterButton">
               <span>اقرأ المزيد</span>
             </button>

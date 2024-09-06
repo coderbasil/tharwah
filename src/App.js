@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect, useState} from "react";
 import {BrowserRouter, Routes, Route} from "react-router-dom";
 import Header from "./components/Header";
 import Home from "./pages/Home";
@@ -12,24 +12,23 @@ import "./css/styles.css"
 
 function App() {
   return (
-    <BrowserRouter basename="/tharwah">
       <div>
         <Header></Header>
         <div>
+          <BrowserRouter>
             <Routes>
-              <Route index element={<Home/>}/>
-              <Route path="ped-blogs" element={<Pedblogs/>}/>
-              <Route path="ped-blogs/:blogtitle" 
+              <Route path="/tharwah" element={<Home/>}/>
+              <Route path="/tharwah/ped-blogs" element={<Pedblogs/>}/>
+              <Route path="/tharwah/ped-blogs/:blogtitle" 
               loader={({params})=>{console.log(params.blogtitle)}} 
               action={({ params }) => {}}
               element ={<Pedblog/>}/>
-              <Route path="excel-sheet" element={<Sheets/>}/>
-              <Route path="*" element={<Home/>}/>
+              <Route path="/tharwah/excel-sheet" element={<Sheets/>}/>
             </Routes>
+          </BrowserRouter>
         </div>
         <Footer></Footer>
       </div>
-    </BrowserRouter>
 
   );
 }
