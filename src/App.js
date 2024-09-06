@@ -24,6 +24,7 @@ function App() {
               action={({ params }) => {}}
               element ={<Pedblog/>}/>
               <Route path="/tharwah/excel-sheet" element={<Sheets/>}/>
+              <Route path="*" element={<Home/>}/>
             </Routes>
           </BrowserRouter>
         </div>
