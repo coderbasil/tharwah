@@ -6,23 +6,23 @@ function Header() {
   return (
     <header className="sticky">
       <div className="logo">
-        <a href="/">
+        <a href="/tharwah">
           <img src={logo} alt="logo" />
         </a>
       </div>
 
       <div className="nav-items">
         <li>
-          <a href="/about-us">عن ثروة</a>
+          <a href="/tharwah/about-us">عن ثروة</a>
         </li>
         <li>
           <a href="https://tharwah2023.com/">متجرنا</a>
         </li>
         <li>
-          <a href="/ped-blogs">المنشورات البيطرية</a>
+          <a href="/tharwah/ped-blogs">المنشورات البيطرية</a>
         </li>
         <li>
-          <a href="/excel-sheet">جداول المتابعه</a>
+          <a href="/tharwah/excel-sheet">جداول المتابعه</a>
         </li>
       </div>
       <div>
