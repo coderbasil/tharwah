@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect, useState} from "react";
 import {BrowserRouter, Routes, Route} from "react-router-dom";
 import Header from "./components/Header";
 import Home from "./pages/Home";
@@ -15,7 +15,7 @@ function App() {
       <div>
         <Header></Header>
         <div>
-          <BrowserRouter basename="/tharwah">
+          <BrowserRouter>
             <Routes>
               <Route index element={<Home/>}/>
               <Route path="/ped-blogs" element={<Pedblogs/>}/>

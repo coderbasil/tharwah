@@ -13,16 +13,16 @@ function Header() {
 
       <div className="nav-items">
         <li>
-          <a href="tharwah/about-us">عن ثروة</a>
+          <a href="/about-us">عن ثروة</a>
         </li>
         <li>
           <a href="https://tharwah2023.com/">متجرنا</a>
         </li>
         <li>
-          <a href="tharwah/ped-blogs">المنشورات البيطرية</a>
+          <a href="/ped-blogs">المنشورات البيطرية</a>
         </li>
         <li>
-          <a href="thawrah/excel-sheet">جداول المتابعه</a>
+          <a href="/excel-sheet">جداول المتابعه</a>
         </li>
       </div>
       <div>
