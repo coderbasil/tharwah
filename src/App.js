@@ -15,15 +15,15 @@ function App() {
       <div>
         <Header></Header>
         <div>
-          <BrowserRouter basename="/tharwah">
+          <BrowserRouter>
             <Routes>
-              <Route index element={<Home/>}/>
-              <Route path="/ped-blogs" element={<Pedblogs/>}/>
-              <Route path="/ped-blogs/:blogtitle" 
+              <Route path="/tharwah" element={<Home/>}/>
+              <Route path="/tharwah/ped-blogs" element={<Pedblogs/>}/>
+              <Route path="/tharwah/ped-blogs/:blogtitle" 
               loader={({params})=>{console.log(params.blogtitle)}} 
               action={({ params }) => {}}
               element ={<Pedblog/>}/>
-              <Route path="/excel-sheet" element={<Sheets/>}/>
+              <Route path="/tharwah/excel-sheet" element={<Sheets/>}/>
             </Routes>
           </BrowserRouter>
         </div>
