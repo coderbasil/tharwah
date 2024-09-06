@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/tharwah/static/css/main.41cd7d55.css",
-    "main.js": "/tharwah/static/js/main.82766043.js",
+    "main.js": "/tharwah/static/js/main.f387711c.js",
     "static/media/wideshot.jpg": "/tharwah/static/media/wideshot.8818e1e67dd3d914f6de.jpg",
     "static/media/logo.png": "/tharwah/static/media/logo.a00bd2ca7d10144f37ee.png",
     "index.html": "/tharwah/index.html",
     "main.41cd7d55.css.map": "/tharwah/static/css/main.41cd7d55.css.map",
-    "main.82766043.js.map": "/tharwah/static/js/main.82766043.js.map"
+    "main.f387711c.js.map": "/tharwah/static/js/main.f387711c.js.map"
   },
   "entrypoints": [
     "static/css/main.41cd7d55.css",
-    "static/js/main.82766043.js"
+    "static/js/main.f387711c.js"
   ]
 }
