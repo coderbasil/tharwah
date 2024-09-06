@@ -15,7 +15,7 @@ function App() {
       <div>
         <Header></Header>
         <div>
-          <BrowserRouter>
+          <BrowserRouter basename="/tharwah">
             <Routes>
               <Route index element={<Home/>}/>
               <Route path="/ped-blogs" element={<Pedblogs/>}/>
