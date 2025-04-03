@@ -42,22 +42,10 @@ export default function Sheets() {
               اختر الجدول
             </option>
             <option
-              value="youtube"
+              value="mgmt"
               onClick={window.scrollTo({ top: 1000, behavior: "smooth" })}
             >
-              youtube
-            </option>
-            <option
-              value="twitter"
-              onClick={window.scrollTo({ top: 1000, behavior: "smooth" })}
-            >
-              twitter
-            </option>
-            <option
-              value="tiktok"
-              onClick={window.scrollTo({ top: 1000, behavior: "smooth" })}
-            >
-              tiktok
+              ادارة المزرعة
             </option>
           </select>
         </div>
