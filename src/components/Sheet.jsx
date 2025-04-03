@@ -6,10 +6,14 @@ export default function Sheet(props) {
     <div className="sheet">
       {!show && (
         <div className="sheet-pic">
-          <img src={props.pic} alt="" />
+          <img src={props.pic} alt="sheet-img" />
         </div>
       )}
-        {show && (<div className="sheet-ih"><h1>{props.title}</h1></div>)}
+      {show && (
+        <div className="sheet-ih">
+          <h1>{props.title}</h1>
+        </div>
+      )}
       {!show && (
         <div className="sheet-tl">
           <div>
