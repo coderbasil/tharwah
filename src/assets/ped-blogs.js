@@ -36,7 +36,7 @@ const petBlogs = [
     recMeds: " ",
     url: "",
     url_pic:
-      "https://cdn.salla.sa/NOYPq/iFHDPZdriZ0mKQBVDwQBXoAB0RjxHnstx0DC1NNz.jpg",
+      "https://www.tvcwai.co.nz/wp-content/uploads/Farm-and-Lifestyle-Sheep-2.jpg",
     date: "",
   },
 ];

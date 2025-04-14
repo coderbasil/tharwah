@@ -2,6 +2,7 @@ import React from "react";
 import Blogcard from "../components/Blogcard";
 import petBlogs from "../assets/ped-blogs";
 import logo from "../assets/pictures/logo.png";
+import { Link } from 'react-scroll';
 
 export default function Home() {
   console.log(window.innerWidth);
@@ -10,6 +11,9 @@ export default function Home() {
     width = 800;
   }
   console.log('"' + width.toString() + '"');
+
+
+
   return (
     <div className="homePage">
       <div className="background-i">
@@ -18,11 +22,11 @@ export default function Home() {
           <h1>حياك في موقع ثروة</h1>
           <h2>للتربية النموذجية</h2>
         </div>
-        <a href="#first">
+        <Link to="first" smooth={true} duration={500}>
           <div className="home-chev">
             <i class="fa-solid fa-chevron-up"></i>
           </div>
-        </a>
+        </Link>
       </div>
       <div id="first" className="a">
         <div className="a-header">
@@ -44,11 +48,10 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <h1 id="second" align="right" className="s-header">
+      {/* <h1 id="second" align="right" className="s-header">
         اخر المنشورات البيطرية
       </h1>
       <div className="second">
-        <div></div>
         <div className="pet-posts">
           <div className="blogCards">
             {petBlogs.slice(petBlogs.length - 4, petBlogs.length).map((a) => {
@@ -56,7 +59,7 @@ export default function Home() {
             })}
           </div>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }

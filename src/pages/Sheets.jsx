@@ -1,6 +1,7 @@
 import React from "react";
 import Sheet from "../components/Sheet";
 import ExcelSheets from "../assets/ExcelSheets.js";
+import { Link } from 'react-scroll';
 
 export default function Sheets() {
   const getInitialState = () => {
@@ -28,11 +29,11 @@ export default function Sheets() {
         <div className="sheet-headers">
           <h1>جداول المتابعة</h1>
         </div>
-        <a href="#sheet-main">
+        <Link to="sheet-main" smooth={true}>
           <div className="sheet-chev">
             <i class="fa-solid fa-chevron-up"></i>
           </div>
-        </a>
+        </Link>
       </div>
 
       <div className="sheet-main" id="sheet-main">

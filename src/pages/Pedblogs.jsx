@@ -1,6 +1,8 @@
 import React from "react";
 import pedBlogs from "../assets/ped-blogs";
 import Blogcard from "../components/Blogcard";
+import { Link } from 'react-scroll';
+
 
 export default function Pedblogs() {
   return (
@@ -10,11 +12,11 @@ export default function Pedblogs() {
         <div className="ped-header1">
           <h1>المنشورات البيطرية</h1>
         </div>
-        <a href="#blog-body" className="no-phone">
+        <Link to="blog-body" smooth={true} offset={-20}>
           <div className="ped-chev">
             <i class="fa-solid fa-chevron-up"></i>
           </div>
-        </a>
+        </Link>
       </div>
       <div id="blog-body" className="blog-body">
         <div className="ped-blogs1">
